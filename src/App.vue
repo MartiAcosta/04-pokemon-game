@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PokemonPage/> <!--Llamo PokemonPage-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokemonPage from './pages/PokemonPage.vue' //importo PokemonPage para imprimir todo lo que quiero mostrat en la web
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokemonPage //aca traigo el component PokemonPage con el que vamos a trabajar
   }
 }
 </script>
@@ -22,5 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
